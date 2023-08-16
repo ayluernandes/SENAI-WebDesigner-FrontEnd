@@ -1,0 +1,10 @@
+body {
+    font-size: 10pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+    color: #fff;
+    background-color: #42ccdb;
+    border: 1px #db4294;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão IF()</title>
+    <link rel="stylesheet" href="css/if.css">
+</head>
+
+<body>
+
+    <h1>Revisão IF() - Parte 1</h1>
+
+    <br><br>
+    <img id="imagem1">
+    <br><br><br>
+    <img id="imagem2">
+
+    <br><br><br>
+    <button onclick="sextou()">Clique aqui!</button>
+
+</body>
+
+<script>
+
+
+
+
+    /* Usando recurso DOM (Document Object Model) */
+
+    window.onload =
+        function carregaImagem() {
+            document.getElementById("imagem1").src = "img/if.png"
+            document.getElementById("imagem2").src = "img/bebe.jfif"
+        }
+
+        function sextou(){
+            alert("Você clicou e sextou!")
+        }
+
+</script>
+
+</html>
