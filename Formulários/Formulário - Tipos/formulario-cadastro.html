@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+
+    <div class="container_form">
+
+        <h1>Formulário de Cadastro</h1>
+
+        <form action="#" class="form" method="post">
+
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome Completo</label>
+                <br>
+                <input type="text" name="nome" class="form" placeholder="Nome" required>
+                <input type="text" name="nome" class="form" placeholder="Sobrenome" required>
+                <br><br>
+                <label for="data">Data de Nascimento</label>
+                <input type="date" required>
+                <br><br>
+                <label for="CPF">CPF</label>
+                <input type="text" placeholder="___.___.___-__" required>
+                <br><br>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Escreva o seu email" required>
+                <br><br>
+                <label for="adress">Endereço</label>
+                <br>
+                <input type="text" placeholder="Rua">
+                <input type="text" placeholder="CEP">
+                <input type="text" placeholder="Número">
+                <br><br>
+                <input type="text" placeholder="Cidade">
+                <input type="text" placeholder="Estado">
+                <select name="pais" id="pais">
+                    <option value="pais">País</option>
+                </select>
+                <br><br>
+                <label for="number">N° Celular</label>
+                <input type="text" placeholder="DDD" required>
+                <input type="text" placeholder="Número" required>
+                <br><br>
+                <input type="button" id="botao" value="Enviar">
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

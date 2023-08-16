@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Silkscreen&family=VT323&family=Viaoda+Libre&display=swap');
+
+body {
+    background-color: #3c095a;
+}
+
+* {
+    text-decoration: none;
+}
+
+.titulo {
+    color: #ffffff;
+    font-family: 'Silkscreen', cursive;
+    font-size: 15px;
+}
+
+#menu {
+    /* Abrindo menu */
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* Espaço entre margens - bottom=baixo */
+    /* Colocando borda inferior */
+    border-bottom: solid;
+    font-size: 17px;
+    font-family: 'Playfair Display';
+    background-color: #26eded;
+}
+
+/* Fechando menu */
+
+/* Chamando a classe mae */
+#menu a {
+    color: #ff00b3;
+}
+
+/* Colocando o efeito de sobre no menu */
+#menu a:hover {
+    color: #9600bb;
+}
+
+.titulo {
+    text-align: center
+}
+
+img {
+    width: 100%;
+}
+
+#fundo {
+    display: flex;
+    justify-content: center;
+}
+
+.master {
+    display: flex;
+
+}
+
+.col_esquerda {
+    margin-right: 20px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.col_direita {
+    margin-right: 20px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.titulo_esquerda {
+    text-align: center;
+}
+
+.titulo_direita {
+    text-align: center;
+}
+
+
+/* Abrindo CSS de Hardware, Software, Web */
+
+.beneficios {
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-bottom: solid;
+    font-size: 17px;
+    font-family: 'Playfair Display';
+    background-color: #26eded;
+}
+
+.beneficios a {
+    color: #ff00b3;
+}
+
+.beneficios a:hover {
+    color: #9600bb;
+}
+
+section {
+    text-align: justify;
+    color: #ffffff;
+}
+
+.voltar a {
+    color: #ff00b3;
+    text-decoration: underline;
+}
+
+/* Fechando CSS de Hardware, Software, Web */
+
+.rodape {
+    /* Rodapé referente a todos os html */
+    color: #ff00b3;
+}
+
+/* Rodapé referente a todos os html */

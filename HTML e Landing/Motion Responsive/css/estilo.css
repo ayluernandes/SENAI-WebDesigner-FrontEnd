@@ -1,0 +1,298 @@
+/* Configuração Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* todo corpo da p´´agina vai tar a fonte padrão */
+body {
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5em;
+}
+
+/* NAvBar */
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(14, 126, 174, 0.735);
+}
+
+.navbar img {
+    width: 150px;
+}
+
+.navbar ul li+li {
+    margin-left: 5px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li a {
+    list-style: none;
+    display: block;
+    padding: 10px 20px;
+    transition: all .1s ease-in;
+}
+
+.navbar li a:hover {
+    color: #000000;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+/* usando o display:flex */
+.sub-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1024px;
+    height: 100px;
+    padding: 20px;
+}
+
+/* <div> principal 'CONTAINER' */
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* Section */
+
+.section {
+    display: grid;
+    grid-template-columns: 512px 512px;
+}
+
+.img-area,
+.text-area {
+    width: 512px;
+    align-items: center;
+    display: grid;
+    transition: all .25s ease;
+}
+
+.img-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img-area img {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 25px;
+    transition: all .25s ease;
+}
+
+.img-area span {
+    opacity: 0;
+    position: absolute;
+    transition: all .25s ease;
+    z-index: 1;
+}
+
+.img-area span:hover {
+    transform: scale(1.01);
+}
+
+.img-area img:hover {
+    filter: blur(1px) grayscale(1);
+}
+
+.img-area:hover>span {
+    opacity: 1;
+}
+
+.text-area {
+    color: #000000;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-area h1 {
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.text-area p {
+    text-align: justify;
+}
+
+/* contato */
+.bg-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+    border-radius: 5px;
+    background: url(/img/mountain_3.png) center;
+    background-size: cover;
+    position: relative;
+    transition: all .25s ease;
+}
+
+.bg-contact:hover {
+    filter: grayscale(1);
+}
+
+.contact,
+.img-area span {
+    background-color: #ebedef;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+.contact:hover {
+    color: #ebedef;
+    background: none;
+    border: 1px solid #ebedef;
+    transform: scale(1.01);
+}
+
+@keyframes arrow {
+    from {
+        bottom: 60px;
+    }
+
+    to {
+        bottom: 30px;
+    }
+}
+
+.arrow {
+    animation: arrow 1s infinite alternate ease-in;
+    z-index: 1;
+    position: absolute;
+    font-size: 2em;
+    color: #ebedef;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.contact-section img {
+    max-width: 200px;
+    max-height: 50px;
+    margin: 20px 0 10px 0;
+}
+
+.linkedin span,
+.github span {
+    padding-bottom: 5px;
+    transition: border-bottom .1s ease;
+    color: #000000;
+}
+
+/* footer */
+
+footer {
+    height: 100px;
+    background: #ebedef;
+}
+
+footer span {
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 0.9em;
+    cursor: default;
+}
+
+/* breakpoint medium-large devices */
+
+@media (max-width: 1050px) {
+    .navbar {
+        margin-bottom: 50px;
+    }
+
+    .sub-container {
+        width: 760px;
+        padding: 0 40px;
+    }
+
+    .container {
+        width: 760px;
+    }
+
+    .section {
+        grid-template-columns: 760px;
+        justify-content: center;
+    }
+
+    .img-area,
+    .text-area {
+        margin: 0 auto;
+        width: 700px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 785px) {
+    .sub-container {
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .section {
+        grid-template-columns: 1;
+        justify-content: center;
+    }
+
+    .img-area,
+    .text-area {
+        width: 70%;
+    }
+
+    .img-area img {
+        padding: 0;
+        width: 95%;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .contact-section {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 548px) {
+    .navbar {
+        height: 150px;
+        margin-bottom: 0;
+    }
+
+    .img-area,
+    .img-area img,
+    .text-area {
+        width: 360px;
+    }
+}

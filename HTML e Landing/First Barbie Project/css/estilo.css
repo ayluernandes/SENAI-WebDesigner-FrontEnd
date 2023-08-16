@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@1,500;1,800&display=swap');
+
+
+
+
+@font-face {
+
+    font-family: 'Barbie';
+
+    src: url("../fonte/Barbie.otf");
+
+}
+
+
+
+
+/* Mudar o corpo da página */
+
+* {
+
+    margin: 0;
+
+    /* Margem externa */
+
+    padding: 0%;
+
+    /* Margem interna */
+
+}
+
+
+
+
+body {
+
+    background-color: rgba(255, 192, 203, 0.816);
+
+}
+
+
+
+
+h1 {
+
+    color: rgb(255, 47, 161);
+
+    font-size: 40px;
+
+}
+
+
+
+
+div a {
+
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+
+.topnav {
+
+    /* Configurando a classe menu */
+
+    background-color: rgb(255, 47, 161);
+
+    overflow: hidden;
+
+    /* Fim da classe topnav */
+
+}
+
+
+
+
+.topnav a {
+
+    /* Abrindo a classe */
+
+    font-family: 'Medium 500 Italic', 'sans-serif';
+
+    float: left;
+
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+
+    /* Centralizar */
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+    /* Tirar o sublinhado do href */
+
+    font-size: 15px;
+
+    /* Fechando a classe */
+
+
+
+
+}
+
+
+
+
+.topnav a:hover {
+
+    /* Mudando a cor do menu e da fonte quando o ponteiro estiver passando */
+
+    background-color: rgb(255, 255, 255);
+
+    color: rgb(255, 47, 161);
+
+
+
+
+}
+
+
+
+
+.topnav a.ativo {
+
+    background-color: rgb(218, 7, 123);
+
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+
+/* Mudando o paragrafo */
+
+.texto1 {
+
+    font-size: 17px;
+
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+
+}
+
+
+
+
+/* Mudando o titulo */
+
+.titulo1 {
+
+    text-align: center;
+
+    font-family: 'barbie';
+
+    font-size: 55px;
+}
+
+
+
+
+img {
+
+    width: 450px;
+}
+
+
+
+
+/* Mudando as configurações do footer */
+
+footer {
+
+    text-align: center;
+
+    color: rgb(255, 47, 161);
+
+    width: 100%;
+
+    height: 35rem;
+
+    position: absolute;
+
+    bottom: 0;
+}
+
+
+
+
+footer img {
+
+    width: 500px;
+}
+
+
+
+
+footer a {
+
+    text-decoration: none;
+
+    color: rgb(59, 59, 59);
+}
