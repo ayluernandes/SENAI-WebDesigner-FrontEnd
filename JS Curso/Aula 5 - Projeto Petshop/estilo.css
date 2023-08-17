@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Tajawal&display=swap');
+
+body {
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+#titulo {
+    font-family: 'Tajawal', Times, serif;
+    color: #ffffff;
+    text-shadow: 2px 2px #65605b;
+    font-size: 70px;
+    text-align: center;
+    user-select: none;
+    border-radius: 90px;
+    background-color: #50beea;
+}
+
+.botao_div {
+    display: flex;
+    justify-content: center;
+}
+
+#relatorio {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#relatorio p {
+    font-size: 25px;
+    font-family: 'Tajawal', Times, serif;
+    color: #ff6a00;
+}
+
+#botao {
+    font-family: 'Rubik Bubbles', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px #ff6a00;
+    width: 400px;
+    background-color: #fbcc01;
+    border: #ffffff;
+    border-radius: 90px;
+    text-align: center;
+}
+
+#botao:hover {
+    background-color: #ff6a00;
+    color: #ffffff;
+    text-shadow: 2px 2px #3e1f08;
+    animation: tremer .2s;
+}
+
+@keyframes tremer {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: 7px;
+    }
+
+    50% {
+        margin-left: 0;
+    }
+
+    75% {
+        margin-left: -7px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+.img img {
+    height: 500px;
+    width: 500px;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
