@@ -18,8 +18,14 @@
     </header>
 
     <main>
-        <button class="button" type="button" id="cadastrarCliente">Cadastrar Cliente</button>
-        <table id="tableClient" class="">
+
+        <div class="img">
+            <img src="Daco_4631273.png" alt="">
+        </div>
+        
+        <button class="button" type="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+
+        <table class="records">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -35,29 +41,33 @@
 
         </table>
 
+
+
         <div id="modal">
             <div class="modal-content">
                 <header class="modal-header">
                     <h2>Novo Cliente</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
-                
+
                 <form id="form" class="modal-form">
-                    <input type="text" id="nome" class="modal-field" placeholder="Nome do cliente" required>
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do cliente"
+                        required>
                     <input type="email" id="email" class="modal-field" placeholder="Email do cliente" required>
                     <input type="tel" id="celular" class="modal-field" placeholder="Celular do cliente" required>
                     <input type="text" id="cidade" class="modal-field" placeholder="Cidade do cliente" required>
                 </form>
-            
+
                 <footer class="modal-footer">
                     <button id="salvar" class="button blue">Salvar</button>
                     <button id="cancelar" class="button green">Cancelar</button>
                 </footer>
-
             </div>
         </div>
 
     </main>
+
+
 
     <footer>
         Copyright &copy; Aylu Ernandes
@@ -67,7 +77,7 @@
 
 <!-- O atributo DEFER diz ao navegador para executar o script
     apenas quando a análise do html estiver finalizada -->
-    
+
 <script src="js/main.js" defer></script>
 
 </html>
