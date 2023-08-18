@@ -1,0 +1,88 @@
+@font-face {
+
+    font-family: 'Barbie';
+
+    src: url("../fonte/Barbie.otf");
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #a586c6;
+    --secundary-color: #fff;
+    --shadow-color: #f43373;
+    --text-color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    box-shadow: 0 1px 5px 1px var(--shadow-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    width: 90%;
+    margin: 5vh auto;
+    padding: 50px;
+    box-shadow: 2px 2px 10px var(--shadow-color);
+    gap: 20px;
+}
+
+footer {
+    width: 100;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    padding: 20px;
+}
+
+.header-title {
+    color: #fff;
+}
+
+@media(max-width:480px){
+ header {
+    position: fixed;
+    width: 100%;
+ }   
+ .header-title {
+    font-size: 1.5rem;
+ }
+
+ main {
+    padding: 0;
+    margin: 2px 0 0 0;
+    width: 100%;
+    box-shadow: none;
+ }
+
+}
+
+
+
+
+/* main {
+    padding: 0;
+    margin: 2px 0 0 0;
+    width: 100%;
+    box-shadow: none;
+} */

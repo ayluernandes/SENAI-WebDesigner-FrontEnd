@@ -1,0 +1,52 @@
+.button {
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: #f9a5c1;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    /* Mozilla - site para efeitos de transição */
+    transition: box-shadow .6s ease;
+}
+
+.button.blue {
+    background-color: #5bbce3;
+}
+
+.button.green {
+    background-color: #8fbc8f;
+}
+
+.button.red {
+    background-color: #df8383;
+}
+
+.button:hover {
+    /* A propriedade CSS inset é uma abreviação que corresponde as propriedades
+    superior, direita, inferior e/ou esquerda.
+    veja o site: https://developer.mozilla.org
+     */
+     box-shadow: inset 200px 0 0 #e883a4;
+}
+
+
+/* Resposividade */
+@media(max-width:480px) {
+    .button.mobile {
+        color: transparent;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        top: 90vh;
+        left: 80vw;
+    }
+
+    .button.mobile::before {
+        color: #000000;
+        width: 100%;
+        height: 100%;
+    }
+}
