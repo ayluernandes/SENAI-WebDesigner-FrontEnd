@@ -38,3 +38,4 @@ function verification() {
         document.getElementById('email').focus();
     }
 }
+

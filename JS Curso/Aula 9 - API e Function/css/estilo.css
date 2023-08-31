@@ -41,10 +41,10 @@ input::placeholder {
 button {
     background-color: #ef5198;
     border: none;
-    padding: 1rem;
+    padding: 0.7rem;
     font-size: 1rem;
-    width: 10em;
-    border-radius: 1rem;
+    width: 215px;
+    border-radius: 30px;
     color: #ffffff;
     box-shadow: 0 0.3rem 5px #5a1c8d81;
     cursor: pointer;
@@ -58,7 +58,7 @@ button:active {
 
 button:hover:not(:disabled) {
     background: #ee65a3;
-    color: white;
+    color: #ffffff;
 }
 
 button:disabled {

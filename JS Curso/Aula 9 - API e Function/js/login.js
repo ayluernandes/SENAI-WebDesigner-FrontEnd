@@ -10,10 +10,10 @@ function verification() {
     }
 };
 
-function pesquisa(email,senha) {
+function pesquisa(email, senha) {
     if (email == "ayluernandes@gmail.com" && senha == "24585") {
 
         window.open("../assets/form.html");
         window.close();
-    } 
+    }
 }

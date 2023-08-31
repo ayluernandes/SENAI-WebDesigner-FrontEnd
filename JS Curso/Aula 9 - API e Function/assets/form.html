@@ -62,11 +62,17 @@
             </div>
         </div>
 
-        
-        <button id="botaoCadastrar" onclick="verification()">Cadastrar</button>
+        <button id="botaoCadastrar" onclick="verification(),limparFormulario()">Cadastrar</button>
 
 
 </body>
 <script src="../js/codigo.js"></script>
+<script src="../js/cep.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+<script>
+    $('#cep').mask('00000-000');
+</script>
 
 </html>
