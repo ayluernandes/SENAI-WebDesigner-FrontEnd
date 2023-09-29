@@ -8,8 +8,10 @@
 }
 
 * {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caviar Dreams Bold', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -35,6 +37,8 @@ nav {
     font-family: 'Caviar Dreams Bold', Tahoma, Geneva, Verdana, sans-serif;
     height: 8vh;
 }
+
+
 
 .nav-list {
     list-style: none;
@@ -75,11 +79,114 @@ nav {
     transform: translateX(0);
 }
 
+.point {
+    color: var(--primary-color);
+}
+
+/*  */
+
+.bodyCard a {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+main.cards {
+    display: flex;
+    padding: 32px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+
+main.cards section.card button:hover {
+    background: var(--tertiary-color);
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 16px 0;
+    background: linear-gradient(to right, #ca7993, #990a3cd0);
+}
+
+main.cards section.card {
+    box-shadow: 5px 5px 15px 5px #46cacc27;
+}
+
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+}
+
+/*  */
+
 @keyframes navLinkFade {
     from {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -96,7 +203,7 @@ nav {
         top: 8vh;
         right: 0;
         width: 40vw;
-        height: 30vh;
+        height: 50vh;
         background: var(--quaternary-color);
         flex-direction: column;
         align-items: center;
@@ -114,15 +221,16 @@ nav {
         text-shadow: #990A3C 0.8px 0.9px 1.5px;
     }
 
-    .mobile-menu{
+    .mobile-menu {
         display: block;
     }
 
-    img{
+    img {
         height: 99%;
         width: 50%;
 
     }
+
     .slogan {
         font-size: 9.2px;
         margin-bottom: 100%;
