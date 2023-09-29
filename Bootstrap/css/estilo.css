@@ -1,8 +1,36 @@
-.w-100 {
-    width: 100px;
-    height: 800px;
+img {
+    height: 15%;
+    width: 25%;
 }
 
-.navbar-brand a {
-    color: rgb(121, 112, 216);
+:root {
+    --primary-color: #EC6091;
+    --secondary-color: #46CACC;
+    --tertiary-color: #990A3C;
+    --quaternary-color: #FFA6C2;
+    --quinary-color: #FFD6E4;
+    --senary-color: #F1E3D7;
+}
+
+.slogan {
+    font-size: 12px;
+    margin-bottom: 100px;
+    margin-left: 3.4%;
+    color: var(--tertiary-color);
+    font-family: 'Caviar Dreams Bold', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-nav {
+    color: var(--primary-color);
+    justify-content: right;
+}
+
+.nav-link {
+    color: var(--primary-color);
+    font-size: 17px;
+    justify-content: right;
+}
+
+.nav-link:hover {
+    color: var(--tertiary-color);
 }
