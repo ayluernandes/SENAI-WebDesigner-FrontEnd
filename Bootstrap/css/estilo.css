@@ -45,6 +45,8 @@ nav {
 .nav-list {
     list-style: none;
     display: flex;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 .nav-list li {
@@ -162,23 +164,23 @@ h2 {
     background-color: var(--tertiary-color);
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
     margin-left: -25%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
     margin-left: -50%;
 }
 
-#radio4:checked ~ .first {
+#radio4:checked~.first {
     margin-left: -75%;
 }
 
-.navigation-auto div{
+.navigation-auto div {
     border: 2px solid var(--secondary-color);
     padding: 5px;
     border-radius: 10px;
@@ -198,20 +200,20 @@ h2 {
     margin-right: 20px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: #990a3cac;
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: #990a3c;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: #990a3cac;
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: #990a3c;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-    background-color: #990a3cac;
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #990a3c;
 }
 
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-    background-color: #990a3cac;
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: #990a3c;
 }
 
 
@@ -234,8 +236,13 @@ h2 {
 
 main.cards {
     display: flex;
-    padding: 150px;
+    margin-top: 0;
+    padding: 15px;
+    justify-content: center;
+    background-color: #ffffff;
 }
+
+
 
 main.cards section.card {
     display: flex;
