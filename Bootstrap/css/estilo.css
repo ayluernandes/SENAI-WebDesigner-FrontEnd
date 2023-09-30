@@ -25,6 +25,8 @@ a:hover {
     color: var(--tertiary-color);
 }
 
+/* Inicio Nav */
+
 img {
     height: 95%;
     width: 20%;
@@ -83,7 +85,140 @@ nav {
     color: var(--primary-color);
 }
 
-/*  */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fim Nav */
+
+
+/* Inicio Slides */
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-shadow: 0.8px 0.8px 2px #2e0211a5;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid var(--tertiary-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background-color: var(--tertiary-color);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid var(--secondary-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #990a3cac;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #990a3cac;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #990a3cac;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #990a3cac;
+}
+
+
+/* Fim Slides */
+
+
+/* Cards */
 
 .bodyCard a {
     height: 100vh;
@@ -99,7 +234,7 @@ nav {
 
 main.cards {
     display: flex;
-    padding: 32px;
+    padding: 150px;
 }
 
 main.cards section.card {
@@ -107,7 +242,7 @@ main.cards section.card {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: #ffffff;
+    background: #ec60914c;
     padding: 1rem 1.5rem;
     border-radius: 8px;
     max-height: 468px;
@@ -160,6 +295,10 @@ main.cards section.card {
     box-shadow: 5px 5px 15px 5px #46cacc27;
 }
 
+/* Fim Cards */
+
+
+
 @media screen and (max-width: 720px) {
     main.cards {
         flex-direction: column;
@@ -179,19 +318,14 @@ main.cards section.card {
     }
 }
 
-/*  */
+/* Fim Cards */
 
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+
+
+
+
+/* Inicio Mobile */
 
 @media (max-width: 999px) {
     body {
@@ -237,3 +371,5 @@ main.cards section.card {
         margin-left: 2%;
     }
 }
+
+/* Fim Mobile */
