@@ -20,11 +20,6 @@ a {
     transition: 0.3s;
 }
 
-a:hover {
-    opacity: 0.7;
-    color: var(--tertiary-color);
-}
-
 /* Inicio Nav */
 
 img {
@@ -38,6 +33,12 @@ nav {
     align-items: center;
     font-family: 'Caviar Dreams Bold', Tahoma, Geneva, Verdana, sans-serif;
     height: 8vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--senary-color);
 }
 
 
@@ -83,8 +84,19 @@ nav {
     transform: translateX(0);
 }
 
-.point {
+.point li span {
     color: var(--primary-color);
+    padding: 0 12px 0 0;
+}
+
+.point li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 8%;
+    width: 100%;
+    border-bottom: 2px dotted var(--primary-color);
 }
 
 @keyframes navLinkFade {
@@ -108,21 +120,21 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-transform: uppercase;
-    text-shadow: 0.8px 0.8px 2px #2e0211a5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .slider {
     margin: 0 auto;
-    width: 800px;
-    height: 400px;
+    width: 950px;
+    height: 500px;
     overflow: hidden;
 }
 
 .slides {
-    width: 400%;
-    height: 400px;
+    width: 500%;
+    height: 500px;
     display: flex;
 }
 
@@ -132,24 +144,25 @@ h2 {
 
 .slide {
     width: 25%;
-    position: relative;
+    position: inherit;
     transition: 2s;
 }
 
 .slide img {
-    width: 800px;
+    width: 950px;
+    height: 500px;
 }
 
 .manual-navigation {
     position: absolute;
-    width: 800px;
+    width: 950px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
 }
 
 .manual-btn {
-    border: 2px solid var(--tertiary-color);
+    border: 2px solid var(--primary-color);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -161,7 +174,7 @@ h2 {
 }
 
 .manual-btn:hover {
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
 }
 
 #radio1:checked~.first {
@@ -190,8 +203,8 @@ h2 {
 
 .navigation-auto {
     position: absolute;
-    width: 800px;
-    margin-top: 360px;
+    width: 950px;
+    margin-top: 460px;
     display: flex;
     justify-content: center;
 }
@@ -201,19 +214,19 @@ h2 {
 }
 
 #radio1:checked~.navigation-auto .auto-btn1 {
-    background-color: #990a3c;
+    background-color: #46cacc8e;
 }
 
 #radio2:checked~.navigation-auto .auto-btn2 {
-    background-color: #990a3c;
+    background-color: #46cacc8e;
 }
 
 #radio3:checked~.navigation-auto .auto-btn3 {
-    background-color: #990a3c;
+    background-color: #46cacc8e;
 }
 
 #radio4:checked~.navigation-auto .auto-btn4 {
-    background-color: #990a3c;
+    background-color: #46cacc8e;
 }
 
 
@@ -265,8 +278,8 @@ main.cards section.card:first-child {
 }
 
 main.cards section.card .icon {
-    width: 64px;
-    height: 64px;
+    width: 250px;
+    height: 250px;
 }
 
 main.cards section.card img {
@@ -274,6 +287,7 @@ main.cards section.card img {
 }
 
 main.cards section.card h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 100%;
     margin: 16px 0;
 }
@@ -292,7 +306,7 @@ main.cards section.card button {
     border: 0;
     cursor: pointer;
     font-size: 80%;
-    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #ffffff;
     margin-bottom: 16px 0;
     background: linear-gradient(to right, #ca7993, #990a3cd0);
@@ -328,13 +342,102 @@ main.cards section.card {
 /* Fim Cards */
 
 
+/* Inicio Footer */
+
+.point-footer li span {
+    color: var(--primary-color);
+    padding: 0 12px 0 0;
+}
+
+.point-footer li::before {
+    content: "";
+    display: block;
+    position: relative;
+    z-index: -1;
+    top: 8%;
+    width: 100%;
+    border-bottom: 2px dotted var(--primary-color);
+}
+
+footer {
+    width: 100%;
+    color: var(--tertiary-color);
+}
+
+footer * {
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#footer-content {
+    background-color: #ec60914c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 3.5rem;
+}
+
+#footer-social-media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+#footer-social-media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--senary-color);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer-social-media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+#tiktok {
+    background-color: #000000;
+}
 
 
+#youtube {
+    background-color: #FF0000;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--senary-color);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+
+/* Fim Footer */
 
 
 /* Inicio Mobile */
 
-@media (max-width: 999px) {
+@media (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -351,6 +454,7 @@ main.cards section.card {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
+        position: fixed;
     }
 
     .nav-list li {
@@ -376,6 +480,36 @@ main.cards section.card {
         font-size: 9.2px;
         margin-bottom: 100%;
         margin-left: 2%;
+    }
+
+
+    .slider {
+        width: 450px;
+        height: 300px;
+    }
+
+    .slides {
+        width: 400%;
+        height: 300px;
+    }
+
+    .slide img {
+        width: 450px;
+        height: 300px;
+    }
+
+    .manual-navigation {
+        width: 450px;
+    }
+
+    .navigation-auto {
+        width: 450px;
+        margin-top: 260px;
+    }
+
+    #footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 }
 
